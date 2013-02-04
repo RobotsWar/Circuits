@@ -1,0 +1,6 @@
+
+Résonnateur
+http://fr.farnell.com/epson-toyocom/sg-310sdf-m-16-00mhz/osc-sg-310sdf-m-16-00mhz/dp/1712832
+
+ATmega88-PA
+http://fr.farnell.com/atmel/atmega88pa-mu/ic-mcu-8bit-avr-8k-flash-32mlf/dp/1715491
