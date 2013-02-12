@@ -4590,6 +4590,7 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="68.58" y="-15.24" size="1.778" layer="95">Diode ou jumper</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="20.32" y="63.5"/>
