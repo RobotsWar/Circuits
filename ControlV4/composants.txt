@@ -1,0 +1,35 @@
+
+Condo s
+47 uF: http://fr.farnell.com/jsp/search/productdetail.jsp?SKU=9452516
+470 uF: http://fr.farnell.com/jsp/search/productdetail.jsp?SKU=9452516
+
+Socket femelle
+http://fr.farnell.com/jsp/search/productdetail.jsp?SKU=1593472
+
+Socket XBee
+http://fr.farnell.com/harwin/m22-7131042/embase-femelle-verticale-sil-10/dp/1109732
+
+Resistances 470
+http://fr.farnell.com/jsp/search/productdetail.jsp?sku=2129087
+
+Regulateur 3.3
+http://fr.farnell.com/jsp/search/productdetail.jsp?sku=1439518
+
+Diode Schotty
+http://fr.farnell.com/jsp/search/productdetail.jsp?SKU=1097299
+
+Diode de descente 1.25
+http://fr.farnell.com/vishay-semiconductor/vs-6ewl06fn-m3/diode-redressement-6a-600v-dpak/dp/2078069
+
+Sockets males
+http://fr.farnell.com/jsp/search/productdetail.jsp?SKU=9729038
+
+Connecteur JST-PH
+http://fr.farnell.com/jst-japan-solderless-terminals/s2b-ph-sm4-tb-lf-sn/embase-cms-entree-laterale-2-voies/dp/9492615?Ntt=9492615
+
+Prise JST-PH
+http://fr.farnell.com/jst-japan-solderless-terminals/phr-2/boitier-2-voies-2mm/dp/3616186?Ntt=3616186
+
+Embout à sertir pour intérieur de la prise
+http://fr.farnell.com/jst-japan-solderless-terminals/sph-002t-p0-5s/contact-0-05mm-a-0-22mm/dp/3617210?Ntt=361-7210
+
