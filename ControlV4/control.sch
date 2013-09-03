@@ -6591,28 +6591,28 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <library name="perso">
 <packages>
 <package name="JST_2">
-<smd name="VCC" x="-2" y="2" dx="4.5" dy="1" layer="1"/>
+<wire x1="-4.2" y1="2.7" x2="0.6" y2="2.7" width="0.127" layer="21"/>
+<wire x1="0.6" y1="2.7" x2="0.6" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-2.7" x2="-4.2" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-2.7" x2="-4.2" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-4.2" x2="4.1" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="-4.2" x2="4.1" y2="4.2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="4.2" x2="-4.2" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="4.2" x2="-4.2" y2="2.7" width="0.127" layer="21"/>
 <smd name="GND" x="-2" y="-2" dx="4.5" dy="1" layer="1"/>
-<wire x1="-4.2" y1="2.7" x2="0.6" y2="2.7" width="0.127" layer="20"/>
-<wire x1="0.6" y1="2.7" x2="0.6" y2="-2.7" width="0.127" layer="20"/>
-<wire x1="0.6" y1="-2.7" x2="-4.2" y2="-2.7" width="0.127" layer="20"/>
-<wire x1="-4.2" y1="-2.7" x2="-4.2" y2="-4.2" width="0.127" layer="20"/>
-<wire x1="-4.2" y1="-4.2" x2="4.1" y2="-4.2" width="0.127" layer="20"/>
-<wire x1="4.1" y1="-4.2" x2="4.1" y2="4.2" width="0.127" layer="20"/>
-<wire x1="4.1" y1="4.2" x2="-4.2" y2="4.2" width="0.127" layer="20"/>
-<wire x1="-4.2" y1="4.2" x2="-4.2" y2="2.7" width="0.127" layer="20"/>
 <smd name="P$1" x="1.5" y="4.2" dx="2.8" dy="1.5" layer="1"/>
 <smd name="P$2" x="1.5" y="-4.2" dx="2.8" dy="1.5" layer="1"/>
+<smd name="VCC" x="-2" y="2" dx="4.5" dy="1" layer="1"/>
 </package>
 </packages>
 <symbols>
 <symbol name="JST_2">
 <wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
-<pin name="GND" x="-10.16" y="-2.54" length="middle"/>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="-2.54" length="middle"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8271,7 +8271,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="alime" width="1.016" drill="0">
+<class number="1" name="alime" width="1.143" drill="0">
 </class>
 </classes>
 <parts>
