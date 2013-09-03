@@ -1476,6 +1476,17 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="0" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="DIODE254">
+<wire x1="-6.35" y1="-1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-6.35" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="-2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MAPLE_MINI">
@@ -1926,6 +1937,22 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </gates>
 <devices>
 <device name="254" package="DIODE_254">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE254">
+<gates>
+<gate name="G$1" symbol="DIODE254" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIODE_254">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="B"/>
