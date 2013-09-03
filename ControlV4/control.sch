@@ -7265,15 +7265,6 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 </library>
 <library name="RobotCampus">
 <packages>
-<package name="SOT223">
-<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.127" layer="20"/>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.127" layer="20"/>
-<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.127" layer="20"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.127" layer="20"/>
-<smd name="VIN" x="0" y="1.35" dx="0.6" dy="1" layer="1"/>
-<smd name="GND" x="-0.95" y="-1.35" dx="0.6" dy="1" layer="1"/>
-<smd name="VOUT" x="0.95" y="-1.35" dx="0.6" dy="1" layer="1"/>
-</package>
 <package name="D-PAK">
 <wire x1="3.35" y1="-3.11" x2="-3.35" y2="-3.11" width="0.127" layer="21"/>
 <smd name="P$1" x="-2.38" y="-4.3" dx="2.28" dy="1.524" layer="1" rot="R90"/>
@@ -7402,18 +7393,36 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <wire x1="5.08" y1="-1.27" x2="5.08" y2="0" width="0.127" layer="121"/>
 <wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.127" layer="121"/>
 </package>
+<package name="SOT95P300X145-3N">
+<smd name="1" x="-0.9398" y="-1.1938" dx="0.5588" dy="1.3208" layer="1"/>
+<smd name="2" x="0.9398" y="-1.1938" dx="0.5588" dy="1.3208" layer="1"/>
+<smd name="3" x="0" y="1.1938" dx="0.5588" dy="1.3208" layer="1"/>
+<wire x1="-0.6858" y1="-0.889" x2="-1.1938" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-1.1938" y1="-0.889" x2="-1.1938" y2="-1.4986" width="0.1524" layer="51"/>
+<wire x1="-1.1938" y1="-1.4986" x2="-0.6858" y2="-1.4986" width="0.1524" layer="51"/>
+<wire x1="-0.6858" y1="-1.4986" x2="-0.6858" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="1.1938" y1="-0.889" x2="0.6858" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="0.6858" y1="-0.889" x2="0.6858" y2="-1.4986" width="0.1524" layer="51"/>
+<wire x1="0.6858" y1="-1.4986" x2="1.1938" y2="-1.4986" width="0.1524" layer="51"/>
+<wire x1="1.1938" y1="-1.4986" x2="1.1938" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="0.889" x2="0.254" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="0.889" x2="0.254" y2="1.4986" width="0.1524" layer="51"/>
+<wire x1="0.254" y1="1.4986" x2="-0.254" y2="1.4986" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.4986" x2="-0.254" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-1.5494" y1="-0.889" x2="1.5494" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="1.5494" y1="-0.889" x2="1.5494" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="1.5494" y1="0.889" x2="-1.5494" y2="0.889" width="0.1524" layer="51"/>
+<wire x1="-1.5494" y1="0.889" x2="-1.5494" y2="-0.889" width="0.1524" layer="51"/>
+<wire x1="-0.6096" y1="0.889" x2="-1.5494" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-0.3302" y1="-0.889" x2="0.3302" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="1.5494" y1="-0.4572" x2="1.5494" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="1.5494" y1="0.889" x2="0.6096" y2="0.889" width="0.1524" layer="21"/>
+<wire x1="-1.5494" y1="0.889" x2="-1.5494" y2="-0.4572" width="0.1524" layer="21"/>
+<text x="-4.2418" y="2.413" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.6896" y="-4.4196" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
-<symbol name="MCP1703">
-<pin name="VIN" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="VOUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" rot="R90"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="2.54" y="-7.62" size="1.27" layer="95">MCP1703</text>
-</symbol>
 <symbol name="DIODE">
 <pin name="IN" x="-7.62" y="0" visible="pad" length="middle"/>
 <pin name="OUT" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
@@ -7443,25 +7452,19 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <pin name="A" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="-2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="MCP1703T-3302E/CB">
+<pin name="VIN" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="GND" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="VOUT" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="94"/>
+<text x="-3.9116" y="7.5946" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.2324" y="-14.9352" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="MCP1703">
-<gates>
-<gate name="G$1" symbol="MCP1703" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT23-A" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
-<connect gate="G$1" pin="VOUT" pad="VOUT"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DIODE" uservalue="yes">
 <gates>
 <gate name="DIODE" symbol="DIODE" x="0" y="0"/>
@@ -7547,6 +7550,30 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP1703T-3302E/CB">
+<description>Low Quiescent Current LDO Regulator</description>
+<gates>
+<gate name="A" symbol="MCP1703T-3302E/CB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P300X145-3N">
+<connects>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="VOUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="MCP1703T-3302E/CB" constant="no"/>
+<attribute name="OC_FARNELL" value="1439518" constant="no"/>
+<attribute name="OC_NEWARK" value="40M0637" constant="no"/>
+<attribute name="PACKAGE" value="SOT-3" constant="no"/>
+<attribute name="SUPPLIER" value="Microchip" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -8242,7 +8269,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="GPIO3" library="rhoban" deviceset="CONNEC_1X02" device=""/>
 <part name="GPIO4" library="rhoban" deviceset="CONNEC_1X02" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -8262,14 +8288,13 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="C1" library="rcl" deviceset="C-EU" device="075-032X103"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="075-032X103"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="U$8" library="perso" deviceset="JST_2" device=""/>
-<part name="U$10" library="perso" deviceset="JST_2" device=""/>
+<part name="JST_IN" library="perso" deviceset="JST_2" device=""/>
+<part name="JST_MICRO" library="perso" deviceset="JST_2" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="XB1" library="maxstream" deviceset="XBEE" device="-PRO"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="U$11" library="RobotCampus" deviceset="MCP1703" device="SOT23-A"/>
 <part name="U$12" library="RobotCampus" deviceset="DIODE" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="U$2" library="RobotCampus" deviceset="CONNEC_1X03" device=""/>
@@ -8280,6 +8305,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="R15" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="U$4" library="RobotCampus" deviceset="MCP1703T-3302E/CB" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8324,7 +8353,6 @@ XBEE</text>
 <instance part="GPIO3" gate="G$1" x="251.46" y="0" rot="R90"/>
 <instance part="GPIO4" gate="G$1" x="251.46" y="-7.62" rot="R90"/>
 <instance part="GND6" gate="1" x="251.46" y="-12.7"/>
-<instance part="GND7" gate="1" x="160.02" y="119.38"/>
 <instance part="GND8" gate="1" x="218.44" y="142.24"/>
 <instance part="GND9" gate="1" x="210.82" y="142.24"/>
 <instance part="GND10" gate="1" x="236.22" y="142.24"/>
@@ -8344,14 +8372,13 @@ XBEE</text>
 <instance part="C1" gate="G$1" x="210.82" y="152.4"/>
 <instance part="C2" gate="G$1" x="218.44" y="152.4"/>
 <instance part="GND15" gate="1" x="58.42" y="127"/>
-<instance part="U$8" gate="G$1" x="73.66" y="132.08"/>
-<instance part="U$10" gate="G$1" x="73.66" y="152.4"/>
+<instance part="JST_IN" gate="G$1" x="73.66" y="132.08"/>
+<instance part="JST_MICRO" gate="G$1" x="73.66" y="152.4"/>
 <instance part="R13" gate="G$1" x="45.72" y="91.44"/>
 <instance part="R14" gate="G$1" x="53.34" y="86.36" rot="R90"/>
 <instance part="GND12" gate="1" x="53.34" y="76.2"/>
 <instance part="XB1" gate="G$1" x="154.94" y="0"/>
 <instance part="GND16" gate="1" x="129.54" y="-35.56"/>
-<instance part="U$11" gate="G$1" x="160.02" y="152.4"/>
 <instance part="U$12" gate="DIODE" x="157.48" y="172.72"/>
 <instance part="JP1" gate="A" x="187.96" y="170.18" rot="MR180"/>
 <instance part="U$2" gate="G$1" x="104.14" y="-15.24"/>
@@ -8362,6 +8389,10 @@ XBEE</text>
 <instance part="C3" gate="G$1" x="243.84" y="152.4"/>
 <instance part="R15" gate="G$1" x="134.62" y="22.86"/>
 <instance part="R16" gate="G$1" x="134.62" y="17.78"/>
+<instance part="C6" gate="G$1" x="276.86" y="152.4"/>
+<instance part="GND14" gate="1" x="276.86" y="142.24"/>
+<instance part="U$4" gate="A" x="149.86" y="149.86"/>
+<instance part="GND7" gate="1" x="129.54" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -8406,7 +8437,7 @@ XBEE</text>
 <wire x1="63.5" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="58.42" y1="149.86" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="GND"/>
+<pinref part="JST_MICRO" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="A/D1" gate="G$1" pin="2"/>
@@ -8422,11 +8453,6 @@ XBEE</text>
 <wire x1="251.46" y1="2.54" x2="251.46" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="251.46" y1="-10.16" x2="251.46" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="160.02" y1="121.92" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$11" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -8450,7 +8476,7 @@ XBEE</text>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="U$8" gate="G$1" pin="GND"/>
+<pinref part="JST_IN" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="129.54" x2="63.5" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8474,6 +8500,17 @@ XBEE</text>
 <wire x1="223.52" y1="147.32" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="-"/>
+</segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="-"/>
+<wire x1="276.86" y1="144.78" x2="276.86" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="A" pin="GND"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="132.08" y1="144.78" x2="129.54" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="144.78" x2="129.54" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM7" class="0">
@@ -8734,7 +8771,7 @@ XBEE</text>
 <label x="-76.2" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VPOWER" class="0">
+<net name="VPOWER" class="1">
 <segment>
 <wire x1="218.44" y1="154.94" x2="210.82" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="154.94" x2="210.82" y2="157.48" width="0.1524" layer="91"/>
@@ -8787,11 +8824,6 @@ XBEE</text>
 </segment>
 </net>
 <net name="33" class="0">
-<segment>
-<wire x1="172.72" y1="154.94" x2="180.34" y2="154.94" width="0.1524" layer="91"/>
-<label x="180.34" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$11" gate="G$1" pin="VOUT"/>
-</segment>
 <segment>
 <pinref part="XB1" gate="G$1" pin="VCC"/>
 <wire x1="139.7" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
@@ -8897,7 +8929,7 @@ XBEE</text>
 </net>
 <net name="VCC_IN" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="VCC"/>
+<pinref part="JST_IN" gate="G$1" pin="VCC"/>
 <wire x1="63.5" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
 <label x="50.8" y="134.62" size="1.778" layer="95"/>
 </segment>
@@ -8928,7 +8960,7 @@ XBEE</text>
 <net name="VMICRO" class="1">
 <segment>
 <wire x1="63.5" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="VCC"/>
+<pinref part="JST_MICRO" gate="G$1" pin="VCC"/>
 <label x="58.42" y="157.48" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
@@ -8942,11 +8974,6 @@ XBEE</text>
 <label x="-33.02" y="22.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="154.94" x2="139.7" y2="154.94" width="0.1524" layer="91"/>
-<label x="134.62" y="154.94" size="1.778" layer="95"/>
-<pinref part="U$11" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
 <wire x1="236.22" y1="154.94" x2="243.84" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="154.94" x2="251.46" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="251.46" y1="154.94" x2="251.46" y2="157.48" width="0.1524" layer="91"/>
@@ -8954,6 +8981,11 @@ XBEE</text>
 <pinref part="C5" gate="G$1" pin="+"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <junction x="243.84" y="154.94"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="A" pin="VIN"/>
+<wire x1="132.08" y1="149.86" x2="127" y2="149.86" width="0.1524" layer="91"/>
+<label x="116.84" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8966,6 +8998,18 @@ XBEE</text>
 <segment>
 <pinref part="XB1" gate="G$1" pin="ON/!SLEEP"/>
 <pinref part="R16" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="3.3" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="+"/>
+<wire x1="276.86" y1="154.94" x2="276.86" y2="157.48" width="0.1524" layer="91"/>
+<label x="276.86" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="A" pin="VOUT"/>
+<wire x1="167.64" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
+<label x="170.18" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
