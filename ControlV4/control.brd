@@ -2017,17 +2017,6 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 </library>
 <library name="RobotCampus">
 <packages>
-<package name="D-PAK">
-<wire x1="3.35" y1="-3.11" x2="-3.35" y2="-3.11" width="0.127" layer="21"/>
-<smd name="P$1" x="-2.38" y="-4.3" dx="2.28" dy="1.524" layer="1" rot="R90"/>
-<smd name="IN" x="2.38" y="-4.3" dx="2.28" dy="1.524" layer="1" rot="R90"/>
-<smd name="OUT" x="0" y="2.88" dx="6.74" dy="6.23" layer="1"/>
-<wire x1="-3.4" y1="-3.1" x2="-3.4" y2="2.7" width="0.127" layer="20"/>
-<wire x1="-3.4" y1="2.7" x2="-3" y2="3.1" width="0.127" layer="20"/>
-<wire x1="3.4" y1="-3.1" x2="3.4" y2="2.7" width="0.127" layer="20"/>
-<wire x1="3.4" y1="2.7" x2="3" y2="3.1" width="0.127" layer="20"/>
-<wire x1="-3" y1="3.1" x2="3" y2="3.1" width="0.127" layer="20"/>
-</package>
 <package name="CONNEC_1X03">
 <wire x1="2.54" y1="1.905" x2="3.175" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.1524" layer="21"/>
@@ -2116,6 +2105,36 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <wire x1="-1.5494" y1="0.889" x2="-1.5494" y2="-0.4572" width="0.1524" layer="21"/>
 <text x="-4.2418" y="2.413" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.6896" y="-4.4196" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+</package>
+<package name="TO-252AA">
+<wire x1="3.275" y1="-2.15" x2="-3.275" y2="-2.15" width="0.2032" layer="21"/>
+<wire x1="-3.275" y1="-2.15" x2="-3.275" y2="3.325" width="0.2032" layer="21"/>
+<wire x1="-3.275" y1="3.325" x2="-2.775" y2="3.825" width="0.2032" layer="21"/>
+<wire x1="-2.775" y1="3.825" x2="2.775" y2="3.825" width="0.2032" layer="21"/>
+<wire x1="2.775" y1="3.825" x2="3.275" y2="3.325" width="0.2032" layer="21"/>
+<wire x1="3.275" y1="3.325" x2="3.275" y2="-2.15" width="0.2032" layer="21"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="4" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="3" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -2406,7 +2425,6 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="51.13" y="34.29" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="1337916" x="51.13" y="34.29" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U$12" library="RobotCampus" package="D-PAK" value="" x="6.08" y="12.43" rot="R180"/>
 <element name="JP1" library="pinhead" package="1X03" value="" x="5.98" y="3.34"/>
 <element name="U$2" library="RobotCampus" package="CONNEC_1X03" value="CONNEC_1X03" x="3.81" y="50.8"/>
 <element name="U$3" library="RobotCampus" package="DIODE_254" value="DIODE254" x="12.7" y="34.29" rot="R90"/>
@@ -2423,6 +2441,7 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="Microchip" x="28.5" y="42.8" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="OC_FARNELL" value="1439518" x="28.5" y="42.8" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
+<element name="U$5" library="RobotCampus" package="TO-252AA" value="DIODETO252AA" x="6.2" y="12.9"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2477,16 +2496,16 @@ design rules under a new name.</description>
 <wire x1="46.72" y1="2.14" x2="49.53" y2="6.35" width="0" layer="19" extent="1-1"/>
 <wire x1="39.97" y1="10.86" x2="49.53" y2="11.43" width="0" layer="19" extent="1-1"/>
 <wire x1="39.87" y1="16.91" x2="39.97" y2="10.86" width="0" layer="19" extent="1-1"/>
-<wire x1="24.14" y1="31.75" x2="39.87" y2="16.91" width="0" layer="19" extent="16-16"/>
+<wire x1="29.4398" y1="41.6062" x2="49.53" y2="40.64" width="0" layer="19" extent="16-16"/>
+<wire x1="23.67" y1="44" x2="29.4398" y2="41.6062" width="0" layer="19" extent="16-16"/>
+<wire x1="18.11" y1="48.26" x2="23.67" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="50.8" x2="18.11" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="52.07" x2="10.16" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="3.08" y1="42.45" x2="7.62" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="24.14" y1="31.75" x2="29.4398" y2="41.6062" width="0" layer="19" extent="16-16"/>
+<wire x1="3.08" y1="29.75" x2="3.08" y2="42.45" width="0" layer="19" extent="1-1"/>
+<wire x1="1.27" y1="22.86" x2="3.08" y2="29.75" width="0" layer="19" extent="1-1"/>
 <wire x1="14.73" y1="22.97" x2="24.14" y2="31.75" width="0" layer="19" extent="16-16"/>
-<wire x1="1.27" y1="22.86" x2="14.73" y2="22.97" width="0" layer="19" extent="1-1"/>
-<wire x1="3.08" y1="29.75" x2="1.27" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="3.08" y1="42.45" x2="3.08" y2="29.75" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="52.07" x2="3.08" y2="42.45" width="0" layer="19" extent="1-1"/>
-<wire x1="10.16" y1="50.8" x2="7.62" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="18.11" y1="48.26" x2="10.16" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="23.67" y1="44" x2="18.11" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="29.4398" y1="41.6062" x2="1.27" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PWM7">
 <contactref element="U$1" pad="X11"/>
@@ -2703,16 +2722,16 @@ design rules under a new name.</description>
 <signal name="VCC_IN">
 <contactref element="JST_IN" pad="VCC"/>
 <contactref element="JP1" pad="1"/>
-<contactref element="U$12" pad="IN"/>
 <contactref element="R13" pad="1"/>
+<contactref element="U$5" pad="3"/>
 <wire x1="3.08" y1="33.75" x2="29.22" y2="31.75" width="0" layer="19" extent="1-16"/>
-<wire x1="3.7" y1="16.73" x2="3.08" y2="33.75" width="0" layer="19" extent="1-1"/>
-<wire x1="3.44" y1="3.34" x2="3.7" y2="16.73" width="0" layer="19" extent="1-1"/>
+<wire x1="8.48" y1="8.1" x2="3.08" y2="33.75" width="0" layer="19" extent="1-1"/>
+<wire x1="3.44" y1="3.34" x2="8.48" y2="8.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="NET1">
-<contactref element="U$12" pad="OUT"/>
 <contactref element="JP1" pad="3"/>
-<wire x1="8.52" y1="3.34" x2="6.08" y2="9.55" width="0" layer="19" extent="1-1"/>
+<contactref element="U$5" pad="4"/>
+<wire x1="8.52" y1="3.34" x2="6.2" y2="15.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VMICRO" class="1">
 <contactref element="JST_MICRO" pad="VCC"/>
@@ -2721,11 +2740,11 @@ design rules under a new name.</description>
 <contactref element="C5" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="U$4" pad="3"/>
-<wire x1="12.7" y1="43.18" x2="12.7" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="12.7" y1="43.18" x2="28.5" y2="43.9938" width="0" layer="19" extent="16-16"/>
+<wire x1="12.7" y1="50.8" x2="12.7" y2="43.18" width="0" layer="19" extent="1-1"/>
 <wire x1="3.08" y1="46.45" x2="12.7" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="42.41" y1="16.91" x2="12.7" y2="43.18" width="0" layer="19" extent="1-1"/>
+<wire x1="42.41" y1="16.91" x2="28.5" y2="43.9938" width="0" layer="19" extent="16-16"/>
 <wire x1="33.35" y1="2.54" x2="42.41" y2="16.91" width="0" layer="19" extent="1-1"/>
-<wire x1="28.5" y1="43.9938" x2="33.35" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="XB1" pad="5"/>
@@ -2740,7 +2759,7 @@ design rules under a new name.</description>
 <signal name="3.3">
 <contactref element="C6" pad="1"/>
 <contactref element="U$4" pad="2"/>
-<wire x1="27.5602" y1="41.6062" x2="23.67" y2="41.46" width="0" layer="19" extent="1-1"/>
+<wire x1="23.67" y1="41.46" x2="27.5602" y2="41.6062" width="0" layer="19" extent="16-16"/>
 </signal>
 </signals>
 </board>
