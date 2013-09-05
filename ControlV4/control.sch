@@ -8590,26 +8590,6 @@ XBEE</text>
 <label x="73.66" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="33" class="0">
-<segment>
-<pinref part="XB1" gate="G$1" pin="VCC"/>
-<wire x1="139.7" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="25.4" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
-<label x="124.46" y="33.02" size="1.778" layer="95"/>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="22.86" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="17.78" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="XB1" gate="G$1" pin="VREF"/>
-<wire x1="139.7" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-25.4" x2="129.54" y2="-22.86" width="0.1524" layer="91"/>
-<label x="129.54" y="-22.86" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="P1" gate="G$1" pin="1"/>
@@ -8779,6 +8759,24 @@ XBEE</text>
 <pinref part="U$4" gate="A" pin="VOUT"/>
 <wire x1="167.64" y1="149.86" x2="170.18" y2="149.86" width="0.1524" layer="91"/>
 <label x="170.18" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="XB1" gate="G$1" pin="VCC"/>
+<wire x1="139.7" y1="25.4" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="25.4" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<label x="124.46" y="33.02" size="1.778" layer="95"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="22.86" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="22.86" x2="124.46" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="17.78" x2="124.46" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="17.78" x2="124.46" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="XB1" gate="G$1" pin="VREF"/>
+<wire x1="139.7" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-25.4" x2="129.54" y2="-22.86" width="0.1524" layer="91"/>
+<label x="129.54" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
