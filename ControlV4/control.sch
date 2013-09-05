@@ -6588,52 +6588,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="perso">
-<packages>
-<package name="JST_2">
-<wire x1="-4.2" y1="2.7" x2="0.6" y2="2.7" width="0.127" layer="21"/>
-<wire x1="0.6" y1="2.7" x2="0.6" y2="-2.7" width="0.127" layer="21"/>
-<wire x1="0.6" y1="-2.7" x2="-4.2" y2="-2.7" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="-2.7" x2="-4.2" y2="-4.2" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="-4.2" x2="4.1" y2="-4.2" width="0.127" layer="21"/>
-<wire x1="4.1" y1="-4.2" x2="4.1" y2="4.2" width="0.127" layer="21"/>
-<wire x1="4.1" y1="4.2" x2="-4.2" y2="4.2" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="4.2" x2="-4.2" y2="2.7" width="0.127" layer="21"/>
-<smd name="GND" x="-2" y="-2" dx="4.5" dy="1" layer="1"/>
-<smd name="P$1" x="1.5" y="4.2" dx="2.8" dy="1.5" layer="1"/>
-<smd name="P$2" x="1.5" y="-4.2" dx="2.8" dy="1.5" layer="1"/>
-<smd name="VCC" x="-2" y="2" dx="4.5" dy="1" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="JST_2">
-<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<pin name="GND" x="-10.16" y="-2.54" length="middle"/>
-<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="JST_2">
-<gates>
-<gate name="G$1" symbol="JST_2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="JST_2">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="RobotCampus">
 <packages>
 <package name="CONNEC_1X03">
@@ -7178,6 +7132,20 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <text x="-11.43" y="13.97" size="1.27" layer="25">&gt;NAME</text>
 <text x="-11.43" y="-19.3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="JST_2">
+<wire x1="-4.2" y1="2.7" x2="0.6" y2="2.7" width="0.127" layer="21"/>
+<wire x1="0.6" y1="2.7" x2="0.6" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-2.7" x2="-4.2" y2="-2.7" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-2.7" x2="-4.2" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-4.2" x2="4.1" y2="-4.2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="-4.2" x2="4.1" y2="4.2" width="0.127" layer="21"/>
+<wire x1="4.1" y1="4.2" x2="-4.2" y2="4.2" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="4.2" x2="-4.2" y2="2.7" width="0.127" layer="21"/>
+<smd name="GND" x="-2" y="-1" dx="4.5" dy="1" layer="1"/>
+<smd name="P$1" x="1.5" y="4.2" dx="2.8" dy="1.5" layer="1"/>
+<smd name="P$2" x="1.5" y="-4.2" dx="2.8" dy="1.5" layer="1"/>
+<smd name="VCC" x="-2" y="1" dx="4.5" dy="1" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CONNEC_1X03">
@@ -7248,6 +7216,14 @@ Source: http://www.maxstream.net/products/xbee/datasheet_XBee_OEM_RF-Modules.pdf
 <pin name="VREF" x="-15.24" y="-25.4" length="short" direction="in"/>
 <text x="-12.7" y="29.21" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-12.7" y="-33.02" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="JST_2">
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="-2.54" length="middle"/>
+<pin name="VCC" x="-10.16" y="2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7438,6 +7414,22 @@ Source: MaxStream, Inc. xbee_productmanual.pdf</description>
 <attribute name="OC_FARNELL" value="1337916" constant="no"/>
 <attribute name="OC_NEWARK" value="42M2667" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_2">
+<gates>
+<gate name="G$1" symbol="JST_2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST_2">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8043,8 +8035,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="C1" library="rcl" deviceset="C-EU" device="075-032X103"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="075-032X103"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="JST_IN" library="perso" deviceset="JST_2" device=""/>
-<part name="JST_MICRO" library="perso" deviceset="JST_2" device=""/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
@@ -8068,6 +8058,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP_POL" device="PTH2"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="U$10" library="RobotCampus" deviceset="JST_2" device=""/>
+<part name="U$11" library="RobotCampus" deviceset="JST_2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8131,8 +8123,6 @@ XBEE</text>
 <instance part="C1" gate="G$1" x="210.82" y="152.4"/>
 <instance part="C2" gate="G$1" x="218.44" y="152.4"/>
 <instance part="GND15" gate="1" x="58.42" y="127"/>
-<instance part="JST_IN" gate="G$1" x="73.66" y="132.08"/>
-<instance part="JST_MICRO" gate="G$1" x="73.66" y="152.4"/>
 <instance part="R13" gate="G$1" x="45.72" y="91.44"/>
 <instance part="R14" gate="G$1" x="53.34" y="86.36" rot="R90"/>
 <instance part="GND12" gate="1" x="53.34" y="76.2"/>
@@ -8156,6 +8146,8 @@ XBEE</text>
 <instance part="GND17" gate="1" x="228.6" y="142.24"/>
 <instance part="C8" gate="G$1" x="284.48" y="152.4"/>
 <instance part="GND18" gate="1" x="284.48" y="142.24"/>
+<instance part="U$10" gate="G$1" x="73.66" y="152.4"/>
+<instance part="U$11" gate="G$1" x="73.66" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -8200,7 +8192,7 @@ XBEE</text>
 <wire x1="63.5" y1="149.86" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="58.42" y1="149.86" x2="58.42" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="JST_MICRO" gate="G$1" pin="GND"/>
+<pinref part="U$10" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="A/D1" gate="G$1" pin="2"/>
@@ -8239,8 +8231,8 @@ XBEE</text>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
-<pinref part="JST_IN" gate="G$1" pin="GND"/>
 <wire x1="58.42" y1="129.54" x2="63.5" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$11" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -8704,9 +8696,9 @@ XBEE</text>
 </net>
 <net name="VCC_IN" class="1">
 <segment>
-<pinref part="JST_IN" gate="G$1" pin="VCC"/>
 <wire x1="63.5" y1="134.62" x2="58.42" y2="134.62" width="0.1524" layer="91"/>
 <label x="50.8" y="134.62" size="1.778" layer="95"/>
+<pinref part="U$11" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="185.42" y1="167.64" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
@@ -8735,8 +8727,8 @@ XBEE</text>
 <net name="VMICRO" class="1">
 <segment>
 <wire x1="63.5" y1="154.94" x2="58.42" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="JST_MICRO" gate="G$1" pin="VCC"/>
 <label x="58.42" y="157.48" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$10" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="C"/>
